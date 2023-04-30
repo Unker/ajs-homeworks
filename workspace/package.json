@@ -1,0 +1,22 @@
+{
+  "name": "defender-game",
+  "version": "1.0.0",
+  "description": "Browser based game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unker/ajs-homeworks.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Unker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unker/ajs-homeworks/issues"
+  },
+  "homepage": "https://github.com/Unker/ajs-homeworks/tree/ajs8#readme"
+}
