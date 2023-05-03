@@ -1,0 +1,24 @@
+{
+  "name": "webpack_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unker/ajs-homeworks.git#ajs8"
+  },
+  "author": "Unker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unker/ajs-homeworks/issues"
+  },
+  "homepage": "https://github.com/Unker/ajs-homeworks/tree/ajs8#readme",
+  "devDependencies": {
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.0.2"
+  }
+}
