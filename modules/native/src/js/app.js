@@ -1,5 +1,4 @@
-const Game = require('./game').default;
-const { GameSavingData, readGameSaving: loadGame, writeGameSaving: saveGame } = require('./game');
+import Game, { GameSavingData, readGameSaving as loadGame, writeGameSaving as saveGame } from './game.js';
 
 console.log('app worked');
 

@@ -1,3 +1,3 @@
-const _default = class Character {
+class Character {
 };
-module.exports._default = _default;
+export { Character as default };

@@ -1,6 +1,6 @@
-const Character = require('./domain');
+import Character from './domain.js';
 
-const _default = class Game {
+class Game {
   start() {
     console.log('game started');
   }
@@ -15,8 +15,8 @@ function readGameSaving() {
 function writeGameSaving() {
 }
 
-module.exports._default = _default;
-module.exports = {
+export { Game as default };
+export {
   GameSavingData,
   readGameSaving,
   writeGameSaving,
