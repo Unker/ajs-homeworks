@@ -1,0 +1,23 @@
+{
+  "name": "native_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "serve": "live-server ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unker/ajs-homeworks.git#ajs8"
+  },
+  "author": "Unker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unker/ajs-homeworks/issues"
+  },
+  "homepage": "https://github.com/Unker/ajs-homeworks/tree/ajs8#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
