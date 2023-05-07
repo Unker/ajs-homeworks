@@ -1,0 +1,14 @@
+{
+  "name": "platforms",
+  "version": "1.0.0",
+  "description": "test packege ajs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Unker",
+  "license": "ISC",
+  "dependencies": {
+    "@unker/ajs": "^1.0.0"
+  }
+}
