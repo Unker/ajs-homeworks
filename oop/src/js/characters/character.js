@@ -1,11 +1,11 @@
-class Character {
-  availableTypes = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
+export default class Character {
+  static #availableTypes = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
   
   constructor(name, type) {
     if (typeof name !== 'string' || name.length < 2 || name.length > 10) {
       throw new Error('Некорректное имя. Допустимая длина имени: от 2 до 10 символов.');
     }
-    if (!availableTypes.includes(type)) {
+    if (!Character.#availableTypes.includes(type)) {
       throw new Error('Некорректный тип персонажа.');
     }
 
@@ -16,9 +16,36 @@ class Character {
     this.attack = 0;
     this.defence = 0;
   }
+
+  static getAvailableTypes() {
+    return Character.#availableTypes;
+  }
+
+  levelUp() {
+    if (this.health === 0) {
+      throw new Error('Нельзя повысить уровень умершего персонажа.');
+    }
+
+    this.level++;
+    this.attack = Math.round(this.attack * 1.2);
+    this.defence = Math.round(this.defence * 1.2);
+    this.health = 100;
+  }
+
+  damage(points) {
+    if (this.health === 0) {
+      throw new Error('Нельзя нанести урон умершему персонажу.');
+    }
+
+    this.health -= points * (1 - this.defence / 100);
+
+    if (this.health < 0) {
+      this.health = 0;
+    }
+  }
 }
  
-class Bowman extends Character {
+export class Bowman extends Character {
   constructor(name) {
     super(name, 'Bowman');
     this.attack = 25;
@@ -26,7 +53,7 @@ class Bowman extends Character {
   }
 }
 
-class Swordsman extends Character {
+export class Swordsman extends Character {
   constructor(name) {
     super(name, 'Swordsman');
     this.attack = 40;
@@ -34,7 +61,7 @@ class Swordsman extends Character {
   }
 }
 
-class Magician extends Character {
+export class Magician extends Character {
   constructor(name) {
     super(name, 'Magician');
     this.attack = 10;
@@ -42,7 +69,7 @@ class Magician extends Character {
   }
 }
 
-class Daemon extends Character {
+export class Daemon extends Character {
   constructor(name) {
     super(name, 'Daemon');
     this.attack = 10;
@@ -50,7 +77,7 @@ class Daemon extends Character {
   }
 }
 
-class Undead extends Character {
+export class Undead extends Character {
   constructor(name) {
     super(name, 'Undead');
     this.attack = 25;
@@ -58,7 +85,7 @@ class Undead extends Character {
   }
 }
 
-class Zombie extends Character {
+export class Zombie extends Character {
   constructor(name) {
     super(name, 'Zombie');
     this.attack = 40;
