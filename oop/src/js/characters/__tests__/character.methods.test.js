@@ -1,4 +1,5 @@
-import Character, { Bowman, Swordsman, Magician, Daemon, Undead, Zombie } from '../character';
+import Character from '../character';
+import Bowman from '../bowman';
 
 describe('Character', () => {
   let character;
@@ -46,16 +47,19 @@ describe('Character', () => {
 
   it('should throw an error when providing invalid name', () => {
     expect(() => {
+      // eslint-disable-next-line no-new
       new Bowman('A');
     }).toThrow('Некорректное имя. Допустимая длина имени: от 2 до 10 символов.');
 
     expect(() => {
+      // eslint-disable-next-line no-new
       new Bowman('VeryLongName');
     }).toThrow('Некорректное имя. Допустимая длина имени: от 2 до 10 символов.');
   });
 
   it('should throw an error when providing invalid type', () => {
     expect(() => {
+      // eslint-disable-next-line no-new
       new Character('Персонаж', 'InvalidType');
     }).toThrow('Некорректный тип персонажа.');
   });

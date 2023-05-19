@@ -1,4 +1,10 @@
-import Character, { Bowman, Swordsman, Magician, Daemon, Undead, Zombie } from './characters/character';
+import Character from './characters/character';
+import Bowman from './characters/bowman';
+import Swordsman from './characters/swordsman';
+
+/* eslint-disable no-console */
+const character = new Character('Лучник', 'Bowman');
+console.log(character);
 
 const bowman = new Bowman('Лучник');
 console.log(bowman);
