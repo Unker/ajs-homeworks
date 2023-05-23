@@ -22,15 +22,15 @@ const character = {
       id: 8,
       name: 'Двойной выстрел',
       icon: 'http://...',
-      description: 'Двойной выстрел наносит двойной урон'
-    }, 
+      description: 'Двойной выстрел наносит двойной урон',
+    },
     {
       id: 9,
       name: 'Нокаутирующий удар',
-      icon: 'http://...'
+      icon: 'http://...',
       // <- обратите внимание, описание "засекречено"
-    }
-  ]	
-}
+    },
+  ],
+};
 
 console.log(extractSpecialAttacks(character));
