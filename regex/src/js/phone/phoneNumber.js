@@ -22,7 +22,7 @@ export default function normalizePhoneNumber(phoneNumber) {
     return null;
   }
   
-  // // Удаление всех символов, кроме цифр
+  // Удаление всех символов, кроме цифр
   const digitsOnly = correctRussianStyle.replace(/[\D+]/g, '');
 
   // Проверка длины номера телефона
