@@ -16,6 +16,9 @@
             "error",
             "LabeledStatement",
             "WithStatement"
-          ]
+        ],
+        "no-underscore-dangle": [
+            "off"
+        ]
     }
 }
