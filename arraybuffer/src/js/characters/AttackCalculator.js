@@ -1,9 +1,5 @@
-export const AttackCalculatorMixin = (BaseClass) => {
-  return class extends BaseClass {
-    constructor(...args) {
-      super(...args);
-    }
-
+const AttackCalculatorMixin = (BaseClass) => (
+  class extends BaseClass {
     get stoned() {
       return this._stoned;
     }
@@ -43,5 +39,7 @@ export const AttackCalculatorMixin = (BaseClass) => {
         throw new Error('Invalid distance value. Distance must be a non-negative number.');
       }
     }
-  };
-}
+  }
+);
+
+export default AttackCalculatorMixin;

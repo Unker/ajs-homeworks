@@ -1,5 +1,5 @@
 import Character from './character';
-import { AttackCalculatorMixin } from './AttackCalculator';
+import AttackCalculatorMixin from './AttackCalculator';
 
 export default class Daemon extends AttackCalculatorMixin(Character) {
   constructor(name) {
