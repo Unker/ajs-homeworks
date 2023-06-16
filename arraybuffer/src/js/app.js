@@ -1,4 +1,6 @@
-import Daemon from './patch_characters/Daemon';
+import Daemon from './characters/daemon';
+import getBuffer from './buffers/getBuffer';
+import ArrayBufferConverter from './buffers/arrayBufferConverter';
 
 const daemon = new Daemon('Демон');
 console.log(daemon);
@@ -13,3 +15,10 @@ console.log(daemon.attack);
 
 const daemon2 = new Daemon('Демон');
 console.log(daemon2.stoned);
+
+const buffer = getBuffer();
+console.log(buffer);
+const converter = new ArrayBufferConverter();
+converter.load(buffer);
+const result = converter.toString();
+console.log(result);
