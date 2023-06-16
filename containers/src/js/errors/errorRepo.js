@@ -8,10 +8,6 @@ export default class ErrorRepository {
   }
 
   translate(code) {
-    const description = this.errors.get(code);
-    if (description === undefined) {
-      return 'Unknown error';
-    }
-    return description;
+    return this.errors.get(code) || 'Unknown error';
   }
 }
