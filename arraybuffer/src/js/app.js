@@ -1,4 +1,4 @@
-import Daemon from './patch_characters/reduce_attack';
+import Daemon from './patch_characters/Daemon';
 
 const daemon = new Daemon('Демон');
 console.log(daemon);
