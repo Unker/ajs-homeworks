@@ -1,4 +1,4 @@
-import Team from './iterators/team'; 
+import Team from './iterators/team';
 import Character from './characters/character';
 import Daemon from './characters/daemon';
 

@@ -16,15 +16,15 @@ export default class Team {
   // Реализация итератора
   [Symbol.iterator]() {
     let index = 0;
-    const characters = this.characters;
+    const persons = this.characters;
 
     return {
       next() {
-        if (index < characters.length) {
-          return { value: characters[index++], done: false };
+        if (index < persons.length) {
+          return { value: persons[index++], done: false };
         }
         return { done: true };
-      }
+      },
     };
   }
 }
