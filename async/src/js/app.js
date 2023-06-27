@@ -1,8 +1,8 @@
 import GameSavingLoader from './gameSaver/gameSavingLoader';
+import GameSavingLoaderPromise from './gameSaver/gameSavingLoaderPromise';
 
 // цепочки .then().then()
-GameSavingLoader.load().then((saving) => {
-  // saving объект класса GameSaving
+GameSavingLoaderPromise.load().then((saving) => {
   console.log(saving);
 }, (error) => {
   console.error(error);
