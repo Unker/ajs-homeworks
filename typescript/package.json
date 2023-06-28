@@ -1,0 +1,21 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unker/ajs-homeworks.git#ajs8"
+  },
+  "author": "Unker",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.5"
+  }
+}
