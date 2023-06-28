@@ -16,6 +16,9 @@
   "author": "Unker",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.4",
     "typescript": "^5.1.5"
   }
 }
