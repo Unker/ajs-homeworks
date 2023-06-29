@@ -9,7 +9,7 @@ describe('Movie class', () => {
     [Countries.usa, Countries.usa, Countries.russuia],
     'the best movie',
     [Genre.scienceFiction, Genre.adventure, Genre.adventure],
-    137
+    137,
   );
 
   it('should return correct movie information', () => {
@@ -17,9 +17,9 @@ describe('Movie class', () => {
 
     expect(movieInfo).toEqual({
       year: 2012,
-      countries: "США, Россия",
+      countries: 'США, Россия',
       slogan: 'the best movie',
-      genres: "научная фантастика, фильм о приключениях",
+      genres: 'научная фантастика, фильм о приключениях',
       duration: '137 мин./02:17',
     });
   });
