@@ -85,13 +85,13 @@ describe('Cart', () => {
   describe('getTotalCostWithDiscount', () => {
     test('should throw an error if discount is less than or equal to 0', () => {
       expect(() => cart.getTotalCostWithDiscount(0)).toThrow(
-        'Discount should be greater than 0 and less than 1.'
+        'Discount should be greater than 0 and less than 1.',
       );
     });
 
     test('should throw an error if discount is greater than or equal to 1', () => {
       expect(() => cart.getTotalCostWithDiscount(1)).toThrow(
-        'Discount should be greater than 0 and less than 1.'
+        'Discount should be greater than 0 and less than 1.',
       );
     });
 

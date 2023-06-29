@@ -12,7 +12,7 @@ export default class Cart {
   }
 
   remove(id: number): void {
-    const index = this._items.findIndex(item => item.id === id);
+    const index = this._items.findIndex((item) => item.id === id);
     if (index !== -1) {
       this._items.splice(index, 1);
     }
