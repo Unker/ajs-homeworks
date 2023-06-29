@@ -11,8 +11,8 @@ module.exports = {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
-        loader: 'ts-loader',
-        }
+          loader: 'ts-loader',
+        },
       },
       {
         test: /\.js$/,
@@ -38,6 +38,6 @@ module.exports = {
     }),
   ],
   resolve: {
-    extensions: [ '.tsx', '.ts', '.js' ],
+    extensions: ['.tsx', '.ts', '.js'],
   },
 };
