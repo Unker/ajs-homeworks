@@ -40,9 +40,9 @@ export default class Movie implements Buyable {
   public getInfo(): Record<string, string | number | string[] | Set<Genre> | Set<Countries>> {
     return {
       year: this.year,
-      countries: this.countries,
+      countries: Array.from(this.countries).join(', '),
       slogan: this.slogan,
-      genres: this.genres,
+      genres: Array.from(this.genres).join(', '),
       duration: this.formatDuration(),
     };
   }
