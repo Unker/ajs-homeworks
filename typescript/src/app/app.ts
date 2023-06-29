@@ -1,7 +1,6 @@
 import Cart from './service /Cart';
 import Book from './domain/Book';
-import Movie from './domain/Movie';
-import { Countries, Genre } from './domain/Movie';
+import Movie, { Countries, Genre } from './domain/Movie';
 
 const cart = new Cart();
 console.log(cart.items);
@@ -16,9 +15,9 @@ const movie = new Movie(
   100,
   2012,
   [Countries.canada],
-  "best movie",
+  'best movie',
   [Genre.horror, Genre.comedy, Genre.comedy],
-  137
+  137,
 );
 
 console.log(movie.getInfo());

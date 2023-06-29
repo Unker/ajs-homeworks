@@ -4,10 +4,10 @@ export default class Cart {
   private _items: Buyable[] = [];
 
   add(item: Buyable): void {
-      this._items.push(item);
+    this._items.push(item);
   }
 
   get items(): Buyable[] {
-      return [...this._items]; 
+    return [...this._items];
   }
 }

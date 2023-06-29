@@ -37,13 +37,13 @@ describe('Cart', () => {
     cart.add(item1);
     cart.add(item2);
 
-    const items = cart.items;
+    const itemsCart = cart.items;
 
-    expect(items).toHaveLength(2);
-    expect(items).toEqual(expect.arrayContaining([item1, item2]));
+    expect(itemsCart).toHaveLength(2);
+    expect(itemsCart).toEqual(expect.arrayContaining([item1, item2]));
 
     // Modifying the returned items array should not affect the cart
-    items.pop();
+    itemsCart.pop();
 
     expect(cart.items).toHaveLength(2);
   });
