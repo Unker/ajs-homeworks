@@ -1,6 +1,6 @@
 import Buyable from '../domain/Buyable';
 
-enum UniqueClasses {
+export enum UniqueClasses {
   Movie = 'Movie',
   Book = 'Book',
 }
@@ -45,6 +45,14 @@ export default class Cart {
 
   get items(): Buyable[] {
     return Array.from(this._items.values(), (item) => item.item);
+  }
+
+  getQuantity(id: number): number {
+    if (this._items.has(id)) {
+      const existingItem = this._items.get(id)!;
+      return existingItem.quantity;
+    }
+    return 0;
   }
 
   getTotalCost(): number {
